@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra mảng</title>
+</head>
+
+<body>
+    <script>
+        function checkArray() {
+            let number = Number(prompt('Nhập số lượng phần tử trong mảng: ', ''));
+            let arr = new Array(number);
+            let min = Number(prompt('Nhập min: ', ''));
+            let max = Number(prompt('Nhập max: ', ''));
+
+            for (let i = 0; i < arr.length; i++) {
+                arr[i] = Math.ceil(Math.random() * max - min + min);
+            }
+            console.log(arr);
+
+            let check_number = Number(prompt('Nhập số nguyên cần tìm: ', ''));
+            for (let j = 0; j < arr.length; j++) {
+                if (check_number == arr[j]) {
+                    document.write('Số nguyên ' + check_number + ' có nằm trong mảng và nằm ở vị trí ' + j);
+                    break;
+                }
+            }
+        }
+        checkArray();
+    </script>
+</body>
+
+</html>

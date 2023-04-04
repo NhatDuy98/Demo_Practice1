@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đếm số kí tự nguyên âm</title>
+</head>
+
+<body>
+    <script>
+        function countVowel() {
+            const vowel = ['a', 'o', 'e', 'u', 'i'];
+            let chain = prompt('Nhập chuỗi bất kì: ', '');
+            let capacity_chain = chain.split('');
+            console.log(capacity_chain);
+            let total = 0;
+
+            for (let i = 0; i < capacity_chain.length; i++) {
+                capacity_chain[i];
+                if( capacity_chain[i] == 'a' || capacity_chain[i] == 'o' || capacity_chain[i] == 'e' || capacity_chain[i] == 'u' || capacity_chain[i] == 'i') {
+                    total++;
+                }
+            }
+            return document.write('Tổng các kí tự nguyên âm có trong chuỗi là ' + total);
+        }
+        countVowel();
+
+    </script>
+</body>
+
+</html>
